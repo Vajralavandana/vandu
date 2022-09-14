@@ -16,7 +16,8 @@ print("The value of a is {}, the value of b is {} and the vale of c is {}".forma
 
 print(10)
 
-x = 8
-y = 9
-z = 11
+# x = 8
+# y = 9
+# z = 11
+x, y, z = 8, 9, 11
 print("the value of x is {}, the vale of y is {} and the value of z is {}".format(x, y, z))
