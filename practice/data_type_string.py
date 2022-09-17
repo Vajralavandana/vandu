@@ -50,3 +50,6 @@ con_d = int(d)
 type_d_aft_con = type(con_d)
 print("the type of d after converting is {}".format(type_d_aft_con))
 print("the type of variable d is {}".format(d))
+
+
+
