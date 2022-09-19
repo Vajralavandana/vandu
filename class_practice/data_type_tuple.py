@@ -12,6 +12,7 @@ list                                                   tuple
 1 list is mutable                              1 tuple is immutable
 2 list can be appended and extended            2 tuple cannot be appended or extended
 3 list allocated extra memory and space        3 tuple allocated memory space only for declared elements
+4 list is slow                                 4 tuple is fast
 """
 
 """

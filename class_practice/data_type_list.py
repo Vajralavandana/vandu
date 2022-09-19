@@ -26,3 +26,11 @@ print("the value of list after appending is {}".format(lst))
 ext_lst = ["lokesh", "abc"]
 lst.extend(ext_lst)
 print("the value of list after extending is {}".format(lst))
+
+lst_x = ["a", "b", "c"]
+zer_ind_lst_x = lst_x[0]
+print("The value of zeroeth index of list is {}".format(zer_ind_lst_x))
+frst_ind_lst_x = lst_x[1]
+print("The value of first index of list is {}".format(frst_ind_lst_x))
+scd_ind_lst_x = lst_x[2]
+print("The value of second index of list is {}".format(scd_ind_lst_x))
