@@ -63,7 +63,8 @@ six_neg_str = str[-6]
 print("The value of sixth negative index of string is {}".format(six_neg_str))
 
 #Slicing
-
+str = "python"
+print("the value of the string is {}".format(str))
 str_zer_to_sec_ind = str[0:3]
 print("The value of slicing from zero to second index of a string is {}".format(str_zer_to_sec_ind))
 

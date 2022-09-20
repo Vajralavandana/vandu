@@ -27,3 +27,17 @@ print("the value of thrd index of lst is {}".format(thrd_ind_b))
 frth_ind_b = b[4]
 print("the value of fourth index of lst is {}".format(frth_ind_b))
 
+#slicing
+p = [12, 13, "ab", "&", "xyz", 14, 15]
+print("the value of variable p is {}".format(p))
+p_zero_to_two_ind = p[0:3]
+print("the value of slicing from zero to second index of list is {}".format(p_zero_to_two_ind))
+p_three_to_six_ind = p[3:7]
+print("the value of slicing from third to sixth index of list is {}".format(p_three_to_six_ind))
+p_zero_to_three_ind = p[0:4]
+print("the value of slicing from zero to third index of list is {}".format(p_zero_to_three_ind))
+
+lst_zero_to_sec_ind = lst[0:3]
+print("the value of slicing from zero to sec index of list is {}".format(lst_zero_to_sec_ind))
+lst_three_to_six_ind = lst[3:7]
+print("the value of slicing from three to six index of list is {}".format(lst_three_to_six_ind))

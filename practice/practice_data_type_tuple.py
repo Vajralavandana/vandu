@@ -33,3 +33,12 @@ frth_ind_b = b[4]
 print("the value of frth index of tuple is {}".format(frth_ind_b))
 fvth_ind_b = b[5]
 print("the value of fvth index of tuple is {}".format(fvth_ind_b))
+
+#slicing
+c =(1, 2, 3, "@", "pqr", "welcome", 100 )
+len_c = len(c)
+print("the length of the c is {}".format(len_c))
+c_zero_to_four_ind = c[0:5]
+print("the value of slicing from zero to forth index of c is {}".format(c_zero_to_four_ind))
+c_fourth_to_six_ind = c[4:7]
+print ("the value of slicing from fourth to six index of c is {}".format(c_fourth_to_six_ind))
