@@ -41,3 +41,37 @@ lst_zero_to_sec_ind = lst[0:3]
 print("the value of slicing from zero to sec index of list is {}".format(lst_zero_to_sec_ind))
 lst_three_to_six_ind = lst[3:7]
 print("the value of slicing from three to six index of list is {}".format(lst_three_to_six_ind))
+
+lst_y = [1, "python"]
+print(lst_y[1][2:6])
+print(lst_y[1][-6:-1])
+
+lst_y_zero_to_four = lst_y[0:5]
+print("the value of slicing from zero to four is {}".format(lst_y_zero_to_four))
+
+lst_y_five_neg_one= lst_y[1][-5:-1]
+print("the value of negative slicing is {}".format(lst_y_five_neg_one))
+print(lst_y[1][0:-1])
+print(lst_y[1][-5:5])
+print(lst_y[1][-6:-2])
+print(lst_y[1][-3:-1])
+
+lst = ["vandana", "abhishek", "gajendra", "manasa"]
+frst_rev_lst = lst[0][::-1]
+print("the value of first reverse index is {}".format(frst_rev_lst))
+sec_rev_lst = lst[1][::-1]
+print("the value of second reverse index is {}".format(sec_rev_lst))
+thrd_rev_lst = lst[2][::-1]
+print("the value of first reverse index is {}".format(thrd_rev_lst))
+frth_rev_lst = lst[3][::-1]
+print("the value of forth reverse index is {}".format(frth_rev_lst))
+
+
+
+print("the value of lst is {}".format(lst))
+print("the value of reverse lst is {}, {}, {}, {} ".format(frst_rev_lst, sec_rev_lst, thrd_rev_lst, frth_rev_lst))
+
+
+
+
+

@@ -166,3 +166,15 @@ d_three_to_six_ind = d[3:7]
 print("the value of slicing from threee to six is {}".format(d_three_to_six_ind))
 d_four_to_six_ind = d[4:7]
 print("the value of slicing from four to six is {}".format(d_four_to_six_ind))
+
+rev_one = d[5:-1]
+print("the value of revese one is {}".format(rev_one))
+rev_one = d[-5:-1]
+print("the value of revese one is {}".format(rev_one))
+rev_one = d[-6:6]
+print("the value of revese one is {}".format(rev_one))
+
+#capitalize
+x = "welcome to python"
+print("the value of string after capitalise s {}".format(x.capitalize()))
+
