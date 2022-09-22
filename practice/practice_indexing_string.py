@@ -31,6 +31,11 @@ print ("the vale of eleventh index of str is {}".format(eleventh_ind_str))
 twelth_ind_str = str_x[12]
 print ("the vale of twelth index of str is {}".format(twelth_ind_str))
 
+print(str_x[-5:-1])
+print(str_x[-13:-1])
+print(str_x[-10:6])
+print(str_x[-7:-1])
+
 str_y = "python@3.7"
 len_str= len(str_y)
 print("the lenth of the value of str is {}".format(len_str))
@@ -178,3 +183,21 @@ print("the value of revese one is {}".format(rev_one))
 x = "welcome to python"
 print("the value of string after capitalise s {}".format(x.capitalize()))
 
+#count
+y = "welcome to python and to the class"
+print("the count of string to in a given string is {}".format(y.count("to")))
+
+#find
+print("the position of string to starting from is {}".format(y.find("to")))
+
+#index
+print("the position of string to starting from is {}".format(y.index("to")))
+print("the position of string to starting from is {}".format(y.index("to", 7, 12)))
+
+#startswith
+print("the string startswith w is {}".format(y.startswith("w")))
+print("the string startswith p is {}".format(y.startswith("p")))
+
+#endwith
+print("the string endswith w is {}".format(y.endswith("w")))
+print("the string endswith s is {}".format(y.endswith("s")))
