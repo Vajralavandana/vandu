@@ -201,3 +201,73 @@ print("the string startswith p is {}".format(y.startswith("p")))
 #endwith
 print("the string endswith w is {}".format(y.endswith("w")))
 print("the string endswith s is {}".format(y.endswith("s")))
+
+# replace in string
+str_sen = "bag contains pencils, eraser and pens"
+print("the value of string before replacement is {}".format(str_sen))
+rep_str = str_sen.replace("eraser", "books")
+print("the value of string after replacing is {}".format(rep_str))
+
+# split and join function
+spl_str_spac = str_sen.split(" ")
+print("the value after splitting space is {}".format(spl_str_spac))
+
+join_spl_ele = ":".join(spl_str_spac)
+print("the value of string after joining is {}".format(join_spl_ele))
+
+jn_ele = "".join(spl_str_spac)
+print("the value of string without space is {}".format(jn_ele))
+
+# lowercase in string
+str_a = "Hello weLCOme"
+lower_str = str_a.lower()
+print("the value of string with lower case is {}".format(lower_str))
+
+# upper case in string
+upp_str = str_a.upper()
+print("the value of string with upper case is {}".format(upp_str))
+
+# swapcase in string
+swap_str = str_a.swapcase()
+print("the value of string after swaping is {}".format(swap_str))
+
+# check isalpha, isnumeric, isalphanum, isupper, islower, isdec
+str1 = "Hello"
+str2 = "1234"
+str3 = "welcome10"
+str4 = "PytHON"
+str5 = "welcome1.0"
+is_alpha_str = str1.isalpha()
+print("the given string isalpha: {}".format(is_alpha_str))
+
+is_num_str = str2.isnumeric()
+print("the given string isnum: {}".format(is_num_str))
+
+is_not_alpha = str1.isnumeric()
+print("the given string isalpha: {}".format(is_not_alpha))
+
+is_not_num = str2.isalpha()
+print("the given string isnumeric: {}".format(is_not_num))
+
+is_alphanum = str3.isalnum()
+print("the given string isalpha numeric:{}".format(is_alphanum))
+
+is_lower = str4.islower()
+print("the given string is lower: {}".format(is_lower))
+
+is_uppr = str4.isupper()
+print("the given string is upper: {}".format(is_uppr))
+
+is_decimal = str5.isdecimal()
+print("the given string isdecimal: {}".format(is_decimal))
+
+# string concatination
+str_b = "Hello"
+str_c = "Good"
+str_d = "Morning"
+str_spac = " "
+str_con1 = str_b + str_spac + str_c + str_spac + str_d
+print("the value of string after concatination is {}".format(str_con1))
+
+str_con2 = str_b+ " "+ str_c + " " + str_d
+print("the value of string after concatination is {}".format(str_con2))
