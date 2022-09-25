@@ -35,10 +35,25 @@ fvth_ind_b = b[5]
 print("the value of fvth index of tuple is {}".format(fvth_ind_b))
 
 #slicing
-c =(1, 2, 3, "@", "pqr", "welcome", 100 )
+c = (1, 2, 3, "@", "pqr", "welcome", 100)
 len_c = len(c)
 print("the length of the c is {}".format(len_c))
 c_zero_to_four_ind = c[0:5]
 print("the value of slicing from zero to forth index of c is {}".format(c_zero_to_four_ind))
 c_fourth_to_six_ind = c[4:7]
 print ("the value of slicing from fourth to six index of c is {}".format(c_fourth_to_six_ind))
+
+tpl = (0, 1, 2, 3, 4, 4, 5, 6)
+len_tpl = len(tpl)
+print("The length of tuple is {}".format(len_tpl))
+
+tple = (6, 2, 0, 2, 1, 10, 12, 0, -1)
+min_num = min(tple)
+max_num = max(tple)
+print("The maximum value in tuple is {}".format(max_num))
+print("The minimum value in tuple is {}".format(min_num))
+
+tp1 = (1, 2, 3, 4, 5,)
+tp2 = (6, 7, 8, 9, 10)
+con_tp = tp1 + tp2
+print("the value of tuple after concatination is {}".format(con_tp))

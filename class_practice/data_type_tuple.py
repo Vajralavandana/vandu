@@ -29,7 +29,7 @@ print("the value of empty tuple is {}".format(emp_tup))
 emp_tup = tuple()
 print("the another way of creating empty tuple is {} ".format(emp_tup))
 
-tpl= (1,"a", "python@3")
+tpl = (1, "a", "python@3")
 print("the value of tuple is {}".format(tpl))
 
 len_tpl = len(tpl)

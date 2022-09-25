@@ -38,6 +38,7 @@ print("The value of second index of list is {}".format(scd_ind_lst_x))
 lst_y = [1, "python"]
 # print thon from list
 ind_lst_y= lst_y[1]
+
 # print(lst_y[1][2:6])
 sec_to_fif_ind_lst_y = ind_lst_y[2:6]
 print("The indexing of first element of list is {}".format(sec_to_fif_ind_lst_y))
@@ -55,7 +56,6 @@ em_lst.append("Deekshitha")
 print("The value of empty list after appending is {}".format(em_lst))
 
 # finding length of list
-
 len_lst = len(con_lst)
 print("The length of list is {}".format(len_lst))
 
@@ -72,7 +72,6 @@ tple_to_lst = list(tple)
 print("the value of converted tuple is {}".format(tple_to_lst))
 
 # count the object occured in list
-
 lst_b = [1, "a", "1", 2, 1]
 count_int_1 = lst_b.count(1)
 print("The count of element or object  of int 1 is {}".format(count_int_1))

@@ -14,9 +14,11 @@ print("The type of variable x is {}".format(type_x))
 y = "8"     #type of 8 is string
 type_y_bef_con = type(y)
 print("The type of y variable before converting is {}".format(type_y_bef_con))
+
 con_y = int(y)
 type_y_aft_con = type(con_y)
 print("The value of variable y after converting is {}".format(type_y_aft_con))
+
 con_y_to_str = str(con_y)
 type_con_y_to_str = type(con_y_to_str)
 print("The type of variable y after converting back to str is {}".format(type_con_y_to_str))
@@ -39,9 +41,7 @@ print("The value of fourth index is {}".format(frth_ind_str))
 fft_ind_str = str[5]
 print("The value of fifth index is {}".format(fft_ind_str))
 
-
 # Reverse indexing
-
 str = "python"
 
 frst_neg_str = str[-1]
@@ -78,10 +78,10 @@ rev_one = str[-5:-1]
 print("The value of reversing string is {}".format(rev_one))
 
 rev_to_rev = str[1:-2]
-print("The value of reverste to reverse string is {}".format(rev_to_rev))
+print("The value of reverse to reverse string is {}".format(rev_to_rev))
 
 rev_to_lst = str[-5::]
-print("The value till last with revesre indexing is {}".format(rev_to_lst))
+print("The value till last with reverse indexing is {}".format(rev_to_lst))
 
 # string reversing
 str_rev = str[::-1]
@@ -95,6 +95,7 @@ print("The value of string after capitalising is {}".format(str_x.capitalize()))
 
 # count of a substring in a string
 str_y = "Welcome to python and to class"
+
 # print(len(str_y))
 print("The count of string to in a given string is {}".format(str_y.count("to")))
 print("The count of string o in a given string is {}".format(str_y.count("o")))
@@ -127,7 +128,7 @@ spl_str_spac = str_sen.split(" ")
 print("The value after splitting spaces is {}".format(spl_str_spac))
 
 join_spl_ele = ":".join(spl_str_spac)
-print("the vallue of string after joining is {}".format(join_spl_ele))
+print("the value of string after joining is {}".format(join_spl_ele))
 jn_ele = "".join(spl_str_spac)
 print("the value of string without space is {}".format(jn_ele))
 
@@ -151,9 +152,9 @@ str3 = "python36"
 str4 = "WelcoMe"
 
 is_alpha_str = str1.isalpha()
-print("The given string is alpah: {}".format(is_alpha_str))
+print("The given string is alpha: {}".format(is_alpha_str))
 is_not_alpha = str1.isnumeric()
-print("The given string is alpah: {}".format(is_not_alpha))
+print("The given string is alpha: {}".format(is_not_alpha))
 
 is_num_str = str2.isnumeric()
 print("The given string is numeric: {}".format(is_num_str))
