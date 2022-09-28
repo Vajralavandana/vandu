@@ -64,3 +64,4 @@ lst1 = ["vegetables", "fruits"]
 lst2 = [["beans", "carrot"], ["Apple", "Orange"]]
 dict3 = dict(zip(lst1, lst2))               # list can be a values for dictionary but not keys, because keys are immutable and lists are mutable hence list cannot be a key for dictionary
 print("The value of dictionary from two lists is {}".format(dict3))
+
