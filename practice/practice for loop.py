@@ -26,15 +26,21 @@ list1.reverse()
 print(list1)
 
 
-str_b  = "welcome to python"
-splt = str_b.split()
-print(" the value of string is{}".format(splt))
-rev = []
+str_b = "welcome to python"
+splt_str = str_b.split(" ")
+rev_lst = []
+for i in splt_str:
+    rev_lst.append(i[::-1])
+rev_str = " ".join(rev_lst)
+print("The reversed string is {}".format(rev_str))
+
+# print(" the value of string is{}".format(splt))
+#
 # len_splt = len(splt)
 # print(" the length of split string is {}".format(len_splt))
-# rev1 = splt[0][::-1] + " " + splt[1][::-1] + " " + splt[2][::-1]
-# print("the reverse value is {}".format(rev1))
+# rev = splt[0][::-1] + " " + splt[1][::-1] + " " + splt[2][::-1]
+# print("the reverse value is {}".format(rev))
 
-for k in splt:
-    rev = k + rev[::-1]
-    print(rev)
+# for k in splt:
+#     rev = k + rev[::-1]
+#     print(rev)

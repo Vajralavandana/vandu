@@ -16,6 +16,15 @@ for k, v in dict_b.items():
     print(k)
     print(v)
 
+str_b = "welcome to python"
+splt_str = str_b.split(" ")
+rev_lst = []
+for i in splt_str:
+    rev_lst.append(i[::-1])
+rev_str = " ".join(rev_lst)
+print("The reversed string is {}".format(rev_str))
+
+
 tpl_a = (1, 4, 9)
 for j in tpl_a:
     print(j)
