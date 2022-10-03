@@ -75,7 +75,7 @@ print("the value of reversed list is {}".format(rev_lst))
 
 # list concatination
 lst1 = ["a", "b", "c"]
-lst2 =[1,2,3]
+lst2 =[1, 2, 3]
 lst_con = lst1 + lst2
 print("the value of lst after concatinating is {}".format(lst_con))
 
