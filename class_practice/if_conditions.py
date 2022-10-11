@@ -27,12 +27,35 @@ else:
 # else:
 #     print("c is largest")
 
-# ascending order of list without using inbuilt
-def ascending_order(lst):
-    len_lst = len(lst)
-    for i in range(len_lst):
-        for j in range(i+1, len_lst):
-            print(i)
-            print(j)
-            print(lst[i])
-            print(lst[j])
+
+
+
+
+
+
+lst = [3, 0, 5, 4]
+len_lst = len(lst)
+for i in range(len_lst):
+    for j in range(i + 1, len_lst):
+        if lst[i] > lst[j]:
+            lst[i], lst[j] = lst[j], lst[i]
+print(lst)
+
+
+for i in range(len_lst):
+    for j in range(i + 1, len_lst):
+        if lst[i] < lst[j]:
+            lst[i], lst[j] = lst[j], lst[i]
+print(lst)
+
+# find the list of evne numbers and list of odd number from given list
+lst_a = [2, 6, 9, 13, 22, 10, 33, 21, 4, 8]
+even_lst = []
+odd_lst = []
+for num in lst_a:
+    if num%2==0:
+        even_lst.append(num)
+    else:
+        odd_lst.append(num)
+print("even list is {}".format(even_lst))
+print("odd list is {}".format(odd_lst))
