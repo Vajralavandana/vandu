@@ -54,3 +54,16 @@ print("the square values of list are {}".format(p))
 
 q = squ_d([6, 7, 8, 9, 10])
 print("the square values of list are {}".format(q))
+
+
+lst = [" ABC ", "hcb", "xyz"]
+# o/p lst =["ABC","hcb","xyz"]
+# join_lst = " ".join(lst)
+# print("the value of list after joining is {}".format(join_lst))
+for i in range(len(lst)):
+    if " " in lst[i]:
+        str = lst[i].replace(" ", "")
+        lst[i] = str
+print(lst)
+
+

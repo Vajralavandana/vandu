@@ -44,3 +44,33 @@ print("The reversed string is {}".format(rev_str))
 # for k in splt:
 #     rev = k + rev[::-1]
 #     print(rev)
+
+
+
+
+str1 = "welcome to the world of python"
+# Print the value of string which is in the place of multiples of 3
+mul = " "
+for i in range(len(str1)):
+    if str[i] * 3 == 0:
+        mul = mul.append(str[i])
+print(mul)
+
+
+
+# Remove duplicates from the list
+lst = [1,4,1,5,2,4]
+emp_lst = []
+for i in range(len(lst)):
+    if i in lst:
+        emp_lst.append(i)
+print("the value of list after removing duplicates is {}".format(emp_lst))
+
+
+lst2 = ["malayalam", "area", "dog"]
+# Print the elements of list which is starting and ending with same letter
+str = []
+for i in lst2:
+    if i.startswith(i[0]) and i.endswith(i[0]):
+        str.append(i)
+print("the list the elements starting and ending with same letter is {}".format(str))
