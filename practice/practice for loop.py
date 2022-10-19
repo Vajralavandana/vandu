@@ -88,3 +88,32 @@ for i in list:
         count = count + 1
 print("the count of elements starting and ending with same letter is {}".format(count))
 
+
+
+
+lst1 = [4, 25, -2, 0, -9, 10, 3, -2, 4, 1]
+# print 2 lists of positive list and negative list without duplicates
+pos = []
+neg = []
+dup = []
+dup_neg = []
+for i in lst1:
+    if i >= 0:
+        pos.append(i)
+        if i not in dup:
+            dup.append(i)
+
+    else:
+         neg.append(i)
+print("the positive list without duplicates is {}".format(dup))
+print("the negative list without duplicates is {}".format(neg))
+
+# remove duplicates from string
+str_a = "hgdkogfkkazmv591469sgh123agh"
+s = []
+for j in str_a:
+    if j not in s:
+        s.append(j)
+st = "".join(s)
+print(st)
+
