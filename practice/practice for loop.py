@@ -45,32 +45,43 @@ print("The reversed string is {}".format(rev_str))
 #     rev = k + rev[::-1]
 #     print(rev)
 
-
-
-
 str1 = "welcome to the world of python"
 # Print the value of string which is in the place of multiples of 3
-mul = " "
-for i in range(len(str1)):
-    if str[i] * 3 == 0:
-        mul = mul.append(str[i])
-print(mul)
-
-
+for k in range(3, 30, 3):
+    print(str1[k])
 
 # Remove duplicates from the list
-lst = [1,4,1,5,2,4]
+lst = [25, 20, 9, 25, 20, 10]
 emp_lst = []
-for i in range(len(lst)):
-    if i in lst:
+for i in lst:
+    if i not in emp_lst:
         emp_lst.append(i)
 print("the value of list after removing duplicates is {}".format(emp_lst))
 
-
 lst2 = ["malayalam", "area", "dog"]
 # Print the elements of list which is starting and ending with same letter
-str = []
+emplst = []
 for i in lst2:
     if i.startswith(i[0]) and i.endswith(i[0]):
-        str.append(i)
-print("the list the elements starting and ending with same letter is {}".format(str))
+        emplst.append(i)
+print("the list the elements starting and ending with same letter is {}".format(emplst))
+#otherway
+for i in lst2:
+    if i[0] == i[-1]:
+        print(i)
+
+# difference between num and reverse of same number
+num = int(input("The number is: "))
+# diff = 0
+rev = 0
+diff = num - rev
+print(diff)
+
+list = ["malayalam", "area", "aba", "xyz", "see", "1221", "god"]
+#count of elements starts and ends with same letter
+count = 0
+for i in list:
+    if i[0] == i[-1]:
+        count = count + 1
+print(count)
+
