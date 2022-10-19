@@ -70,7 +70,6 @@ for i in lst2:
     if i[0] == i[-1]:
         print(i)
 
-
 # difference between num and reverse of same number
 num = int(input("The number is: "))
 str_num = str(num)
