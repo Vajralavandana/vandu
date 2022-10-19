@@ -6,9 +6,9 @@ for i in str_b:
 str_b_rev1 = str_b_rev[10:17] + str_b_rev[6:10]+ str_b_rev[0:7]
 print("the reverse string is {}".format(str_b_rev1))
 
-str = "hello world"
+st = "hello world"
 str_rev = " "
-for a in str:
+for a in st:
     str_rev = a +str_rev
     print("the reverse value is {}".format(str_rev))
 str1 = str_rev[6:11] + " " + str_rev[0:5]
@@ -70,12 +70,16 @@ for i in lst2:
     if i[0] == i[-1]:
         print(i)
 
+
 # difference between num and reverse of same number
 num = int(input("The number is: "))
-# diff = 0
-rev = 0
-diff = num - rev
-print(diff)
+str_num = str(num)
+rev = str_num[::-1]
+int_num = int(rev)
+print("the reverse number is {}".format(rev))
+diff = num - int_num
+print("the difference between the numbers is {}".format(diff))
+
 
 list = ["malayalam", "area", "aba", "xyz", "see", "1221", "god"]
 #count of elements starts and ends with same letter
@@ -83,5 +87,5 @@ count = 0
 for i in list:
     if i[0] == i[-1]:
         count = count + 1
-print(count)
+print("the count of elements starting and ending with same letter is {}".format(count))
 
