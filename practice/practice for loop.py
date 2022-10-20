@@ -99,14 +99,16 @@ dup = []
 dup_neg = []
 for i in lst1:
     if i >= 0:
-        pos.append(i)
         if i not in dup:
+            pos.append(i)
             dup.append(i)
-
     else:
-         neg.append(i)
+        neg.append(i)
+        if i not in dup_neg:
+            dup_neg.append(i)
+
 print("the positive list without duplicates is {}".format(dup))
-print("the negative list without duplicates is {}".format(neg))
+print("the negative list without duplicates is {}".format(dup_neg))
 
 # remove duplicates from string
 str_a = "hgdkogfkkazmv591469sgh123agh"
@@ -117,3 +119,10 @@ for j in str_a:
 st = "".join(s)
 print(st)
 
+# another way
+str_a = "hgdkogfkkazmv591469sgh123agh"
+s = " "
+for i in str_a:
+    if i not in s:
+        s = s + i
+print("the string after removing duplicates is {}".format(s))
