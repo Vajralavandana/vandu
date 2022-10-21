@@ -106,7 +106,6 @@ for i in lst1:
         neg.append(i)
         if i not in dup_neg:
             dup_neg.append(i)
-
 print("the positive list without duplicates is {}".format(dup))
 print("the negative list without duplicates is {}".format(dup_neg))
 
@@ -126,3 +125,18 @@ for i in str_a:
     if i not in s:
         s = s + i
 print("the string after removing duplicates is {}".format(s))
+
+
+# Write a program to find N largest number from list
+lst_a = [5, 56, 17, 87, 34, 2, 76]
+# max_num = max(lst_a)
+# print(max_num)
+lst_a.sort()
+desc_lst = []
+for i in lst_a:
+    desc_lst = [i] + desc_lst
+print(desc_lst)
+n = int(input("Enter the number: "))
+m = desc_lst[0:n]
+print(m)
+
