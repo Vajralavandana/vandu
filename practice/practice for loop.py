@@ -120,7 +120,7 @@ print(st)
 
 # another way
 str_a = "hgdkogfkkazmv591469sgh123agh"
-s = " "
+s = ""
 for i in str_a:
     if i not in s:
         s = s + i
@@ -139,4 +139,53 @@ print(desc_lst)
 n = int(input("Enter the number: "))
 m = desc_lst[0:n]
 print(m)
+
+# another way
+lst_c = [5, 56, 17, 87, 34, 2, 76]
+lst_c.sort()
+lst_c.reverse()
+print(lst_c)
+N = int(input("N ="))
+lar_lst = []
+for i in range(N):
+    lar_lst.append(lst_c[i])
+print(lar_lst)
+
+# another way
+lst_b = [5, 56, 17, 87, 34, 2, 76]
+lst_b.sort()
+lst_b.reverse()
+print(lst_b)
+N = int(input("N ="))
+for i in range(N):
+    print(lst_b[i])
+
+def lar_num(list, N):
+    list.sort()
+    list.reverse()
+    large_lst = []
+    for i in range(N):
+        large_lst.append(lst_b[i])
+    return large_lst
+
+a = lar_num([5, 56, 17, 87, 34, 2, 76], 2)
+print(a)
+
+str1 = "abcdfcdaecbajadej"
+# output: dict_a ={"a":4,"b":2,"c":3,"d":3,"j":2,"e":2, "f":1}
+str1_dict = {}
+for i in str1:
+    cnt = str1.count(i)
+    str1_dict[i] = cnt
+print(str1_dict)
+
+def str_dictionary(str):
+    str12_dict = {}
+    for i in str1:
+        cnt1 = str.count(i)
+        str12_dict[i] = cnt1
+    return str12_dict
+b = str_dictionary("abcdfcdaecbajadejagf")
+print(b)
+
 
