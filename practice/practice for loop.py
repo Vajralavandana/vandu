@@ -1,29 +1,29 @@
-str_b = "Welcome to python"
-str_b_rev = " "
-for i in str_b:
-    str_b_rev= i + str_b_rev
-    print("the reverse value is {}".format(str_b_rev))
-str_b_rev1 = str_b_rev[10:17] + str_b_rev[6:10]+ str_b_rev[0:7]
-print("the reverse string is {}".format(str_b_rev1))
+# str_b = "Welcome to python"
+# str_b_rev = " "
+# for i in str_b:
+#     str_b_rev= i + str_b_rev
+#     print("the reverse value is {}".format(str_b_rev))
+# str_b_rev1 = str_b_rev[10:17] + str_b_rev[6:10]+ str_b_rev[0:7]
+# print("the reverse string is {}".format(str_b_rev1))
+#
+# st = "hello world"
+# str_rev = " "
+# for a in st:
+#     str_rev = a +str_rev
+#     print("the reverse value is {}".format(str_rev))
+# str1 = str_rev[6:11] + " " + str_rev[0:5]
+# print(str1)
 
-st = "hello world"
-str_rev = " "
-for a in st:
-    str_rev = a +str_rev
-    print("the reverse value is {}".format(str_rev))
-str1 = str_rev[6:11] + " " + str_rev[0:5]
-print(str1)
-
-str_b = list(str_b)
-print(str_b)
-list1 = str_b[::-1]
-print(list1)
-list1 = str_b[0:7] + str_b[8:10] + str_b[11:17]
-print(list1)
-list2 = str_b[7:0] + str_b[10:8] + str_b[17:11]
-print(list2)
-list1.reverse()
-print(list1)
+# str_b = list(str_b)
+# print(str_b)
+# list1 = str_b[::-1]
+# print(list1)
+# list1 = str_b[0:7] + str_b[8:10] + str_b[11:17]
+# print(list1)
+# list2 = str_b[7:0] + str_b[10:8] + str_b[17:11]
+# print(list2)
+# list1.reverse()
+# print(list1)
 
 # reverse each word in string
 str_b = "welcome to python"
@@ -90,9 +90,9 @@ for i in lst2:
         print(i)
 
 def start_end(list):
-    for j in list:
-        if j[0] == j[-1]:
-            return j
+    for i in list:
+        if i[0] == i[-1]:
+            return i
 d = start_end(["level", "vandana", "malayalam", "sky", "ana", "bcbb"])
 print(d)
 
@@ -124,11 +124,11 @@ for i in list:
 print("the count of elements starting and ending with same letter is {}".format(count))
 
 def cont(list):
-    coun = 0
+    count = 0
     for i in list:
         if i[0] == i[-1]:
-            coun = coun + 1
-        return coun
+            count = count + 1
+    return count
 f = cont(["121", "1234", "abdfa", "rtwdr", "hjkfl"])
 print(f)
 
@@ -136,19 +136,13 @@ lst1 = [4, 25, -2, 0, -9, 10, 3, -2, 4, 1]
 # print 2 lists of positive list and negative list without duplicates
 pos = []
 neg = []
-dup = []
-dup_neg = []
 for i in lst1:
-    if i >= 0:
-        if i not in dup:
-            pos.append(i)
-            dup.append(i)
-    else:
+    if i >= 0 and i not in pos:
+        pos.append(i)
+    if i < 0 and i not in neg:
         neg.append(i)
-        if i not in dup_neg:
-            dup_neg.append(i)
-print("the positive list without duplicates is {}".format(dup))
-print("the negative list without duplicates is {}".format(dup_neg))
+print(pos)
+print(neg)
 
 # remove duplicates from string
 str_a = "hgdkogfkkazmv591469sgh123agh"
@@ -158,7 +152,6 @@ for j in str_a:
         s.append(j)
 st = "".join(s)
 print(st)
-
 # another way
 str_a = "hgdkogfkkazmv591469sgh123agh"
 s = ""
@@ -172,8 +165,8 @@ def rem_str(str):
     for i in str:
         if i not in x:
             x = x + i
-        return x
-g = rem_str("hgdkogfkkazmv591469sgh123agh")
+    return x
+g = rem_str("hgdkogfkkazmv591469sgh123aghghgdtrdykittrewersrdtryrdyytrdrtetriiiiewwa")
 print(g)
 
 # Write a program to find N largest number from list
@@ -252,7 +245,6 @@ def vow_rem(str):
             j.append(i)
     jn = "".join(j)
     return jn
-
 v = vow_rem("welcome to sweet home")
 print(v)
 
@@ -281,9 +273,11 @@ print(h)
 
 # print prime numbers
 n = int(input("number is : "))
-for i in range(2, n):
+for i in range(1, n):
     if n % i == 0:
         print(i)
+
+
 
 
 
