@@ -83,7 +83,8 @@ print("the value of dict from 2 lists is {} ".format(dict3))
 dict3.update({"vegetables": ["beans", "carrot", "tomato", "onions"], "fruits": ["apples", "orange", "grapes", "mango"]})
 print("the value of dict after updating is {}".format(dict3))
 
-dict_a ={"Name_1": "Abhishek", "Name_2": "Gajendra", "Name_3": "Vandana"}
+# reverse the values of given dict
+dict_a = {"Name_1": "Abhishek", "Name_2": "Gajendra", "Name_3": "Vandana"}
 print("the value of dictionary is {}".format(dict_a))
 
 dict_a["Name_1"] = dict_a["Name_1"][::-1]
@@ -91,9 +92,10 @@ dict_a["Name_2"] = dict_a["Name_2"][::-1]
 dict_a["Name_3"] = dict_a["Name_3"][::-1]
 print(dict_a)
 
-frst_dict = dict_a["Name_1"]
-rev = frst_dict[::-1]
-print(frst_dict)
+# frst_dict = dict_a["Name_1"]
+# rev = frst_dict[::-1]
+# print(frst_dict)
+
 # print(rev)
 # dict_a["Name_1"] = rev
 # print(dict_a)

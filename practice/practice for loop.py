@@ -25,7 +25,7 @@ print(list2)
 list1.reverse()
 print(list1)
 
-
+# reverse each word in string
 str_b = "welcome to python"
 splt_str = str_b.split(" ")
 rev_lst = []
@@ -33,6 +33,16 @@ for i in splt_str:
     rev_lst.append(i[::-1])
 rev_str = " ".join(rev_lst)
 print("The reversed string is {}".format(rev_str))
+
+def rev(str):
+    splt_str = str.split(" ")
+    rev_lst = []
+    for i in splt_str:
+        rev_lst.append(i[::-1])
+    rev_str = " ".join(rev_lst)
+    return rev_str
+a = rev("hello welcome to world")
+print(a)
 
 # print(" the value of string is{}".format(splt))
 #
@@ -58,6 +68,15 @@ for i in lst:
         emp_lst.append(i)
 print("the value of list after removing duplicates is {}".format(emp_lst))
 
+def rem_dup(list):
+    em_lst = []
+    for i in list:
+        if i not in em_lst:
+            em_lst.append(i)
+    return em_lst
+c = rem_dup([3,56,32,1,4,3,1,32,67, 6, 3, 6, 678,24, 67, 34, 32,0, 89, 34])
+print(c)
+
 lst2 = ["malayalam", "area", "dog"]
 # Print the elements of list which is starting and ending with same letter
 emplst = []
@@ -70,6 +89,13 @@ for i in lst2:
     if i[0] == i[-1]:
         print(i)
 
+def start_end(list):
+    for j in list:
+        if j[0] == j[-1]:
+            return j
+d = start_end(["level", "vandana", "malayalam", "sky", "ana", "bcbb"])
+print(d)
+
 # difference between num and reverse of same number
 num = int(input("The number is: "))
 str_num = str(num)
@@ -79,6 +105,15 @@ print("the reverse number is {}".format(rev))
 diff = num - int_num
 print("the difference between the numbers is {}".format(diff))
 
+def diff(num):
+    str_numb = str(num)
+    reve = str_numb[::-1]
+    int_numb = int(reve)
+    print(reve)
+    diffe = num - int_numb
+    return diffe
+e = diff(45)
+print(e)
 
 list = ["malayalam", "area", "aba", "xyz", "see", "1221", "god"]
 #count of elements starts and ends with same letter
@@ -88,8 +123,14 @@ for i in list:
         count = count + 1
 print("the count of elements starting and ending with same letter is {}".format(count))
 
-
-
+def cont(list):
+    coun = 0
+    for i in list:
+        if i[0] == i[-1]:
+            coun = coun + 1
+        return coun
+f = cont(["121", "1234", "abdfa", "rtwdr", "hjkfl"])
+print(f)
 
 lst1 = [4, 25, -2, 0, -9, 10, 3, -2, 4, 1]
 # print 2 lists of positive list and negative list without duplicates
@@ -126,30 +167,36 @@ for i in str_a:
         s = s + i
 print("the string after removing duplicates is {}".format(s))
 
+def rem_str(str):
+    x = ""
+    for i in str:
+        if i not in x:
+            x = x + i
+        return x
+g = rem_str("hgdkogfkkazmv591469sgh123agh")
+print(g)
 
 # Write a program to find N largest number from list
 lst_a = [5, 56, 17, 87, 34, 2, 76]
-# max_num = max(lst_a)
-# print(max_num)
-lst_a.sort()
-desc_lst = []
-for i in lst_a:
-    desc_lst = [i] + desc_lst
-print(desc_lst)
-n = int(input("Enter the number: "))
-m = desc_lst[0:n]
-print(m)
+# lst_a.sort()
+# desc_lst = []
+# for i in lst_a:
+#     desc_lst = [i] + desc_lst
+# print(desc_lst)
+# n = int(input("Enter the number: "))
+# m = desc_lst[0:n]
+# print(m)
 
 # another way
-lst_c = [5, 56, 17, 87, 34, 2, 76]
-lst_c.sort()
-lst_c.reverse()
-print(lst_c)
-N = int(input("N ="))
-lar_lst = []
-for i in range(N):
-    lar_lst.append(lst_c[i])
-print(lar_lst)
+# lst_c = [5, 56, 17, 87, 34, 2, 76]
+# lst_c.sort()
+# lst_c.reverse()
+# print(lst_c)
+# N = int(input("N ="))
+# lar_lst = []
+# for i in range(N):
+#     lar_lst.append(lst_c[i])
+# print(lar_lst)
 
 # another way
 lst_b = [5, 56, 17, 87, 34, 2, 76]
@@ -187,5 +234,56 @@ def str_dictionary(str):
     return str12_dict
 b = str_dictionary("abcdfcdaecbajadejagf")
 print(b)
+
+# remove vowels in str
+str12 = "hai how are you"
+lstx = ["a", "e", "i", "o", "u"]
+j = []
+for i in str12:
+    if i not in lstx:
+        j.append(i)
+jn = "".join(j)
+print(jn)
+
+def vow_rem(str):
+    j = []
+    for i in str:
+        if i not in lstx:
+            j.append(i)
+    jn = "".join(j)
+    return jn
+
+v = vow_rem("welcome to sweet home")
+print(v)
+
+# vowels count in dict
+d = {}
+count = 0
+for i in str12:
+    count = str12.count(i)
+    if i in lstx:
+        d[i] = count
+print(d)
+
+lt = ["a", "e", "i", "o", "u"]
+def vo_coun(str):
+    c = {}
+    count = 0
+    for i in str:
+        count = str.count(i)
+        if i in lt:
+            c[i] = count
+    return c
+g = vo_coun("welcome to python programming and world")
+print(g)
+h = vo_coun("hello world")
+print(h)
+
+# print prime numbers
+n = int(input("number is : "))
+for i in range(2, n):
+    if n % i == 0:
+        print(i)
+
 
 

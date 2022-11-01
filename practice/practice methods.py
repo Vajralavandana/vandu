@@ -18,6 +18,7 @@ print("the sum of list is {}".format(a))
 b = lst_a([10, 20, 30])
 print("the sum of list is {}".format(b))
 
+# cube
 c = [1, 2, 3, 4]
 cube_c = []
 for i in c:
@@ -58,12 +59,17 @@ print("the square values of list are {}".format(q))
 
 lst = [" ABC ", "hcb", "xyz"]
 # o/p lst =["ABC","hcb","xyz"]
-# join_lst = " ".join(lst)
-# print("the value of list after joining is {}".format(join_lst))
 for i in range(len(lst)):
     if " " in lst[i]:
         str = lst[i].replace(" ", "")
         lst[i] = str
 print(lst)
 
-
+def rem_spac(list):
+    for i in range(len(list)):
+        if " " in list[i]:
+            str = list[i].replace(" ", "")
+            list[i] = str
+    return list
+x = rem_spac(["  abcc ", "hgd", "abdfdddd    ddf   "])
+print(x)

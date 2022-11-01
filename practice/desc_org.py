@@ -14,15 +14,15 @@
 # list = descending_list([3, 5, 1, 0])
 # print(list)
 #
-# # def des_list(list):
-# #     list.sort()
-# #     rev_list = " "
-# #     for i in list:
-# #         rev_list = i + rev_list
-# #     return rev_list
-# #
-# # a = des_list([5, 7, 2, 1])
-# # print(a)
+# def des_list(list):
+#     list.sort()
+#     rev_list = []
+#     for i in list:
+#         rev_list = i + rev_list
+#     return rev_list
+#
+# a = des_list([5, 7, 2, 1])
+# print(a)
 #
 # #write a method to list type of values in dictionary
 # dict_a = {"a": 1, "b": "2"}
@@ -66,6 +66,7 @@ print("the value of descending list is {}".format(q))
 a= desc_lst([1, 8, 3, 99, 78, 100, 200, 600, 250])
 print("the value of descending list is {}".format(a))
 
+# type of values in dict
 dicta = {"a": 1, "b": "2"}
 val_typ = []
 for key, val in dicta.items():

@@ -16,6 +16,7 @@ for k, v in dict_b.items():
     print(k)
     print(v)
 
+# revere each element in the sting
 str_b = "welcome to python"
 splt_str = str_b.split(" ")
 rev_lst = []
@@ -45,7 +46,6 @@ for i in str_b:
     print("The value of i is {}".format(i))
     rev_str = i+rev_str
     print("the rev_str value after iteration is {}".format(rev_str))
-
 print("The value of reversed string is {}".format(rev_str))
 
 """
@@ -61,14 +61,18 @@ print("The list of range of values from 1 to  10 is {}".format(lst_a))
 lst_step = list(range(0, 110, 20))      # initial point, end point, step size
 print("The list of values from 0 to 100 with stepsize 20 is {}".format(lst_step))
 
+# summation
 def summation(init_pnt, end_pnt):
     sum = 0
     for i in range(init_pnt, end_pnt):
-        sum = sum +i
+        sum = sum + i
     return sum
 
 print("the summation of values from 0 to 10 is {}".format(summation(0, 10)))
 print("The summation of values from 0 to 100 is {}".format(summation(0, 100)))
+
+a = summation(0, 10)
+print(a)
 
 # inner for loops
 lst1 = [1, 2, 3, 4]
@@ -77,12 +81,12 @@ for i in lst1:
     for j in lst2:
         print(i, j)
 
-
 sum_lst = []
 for i in range(len(lst1)):
     sum = lst1[i] + lst2[i]
     sum_lst.append(sum)
-print("The sum of each elements of two two list is {}".format(sum_lst))
+print("The sum of each elements of two list is {}".format(sum_lst))
+
 # try:
 #     sum_lst = []
 #     for i in range(len(lst1)):
