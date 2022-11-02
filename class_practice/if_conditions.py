@@ -1,5 +1,4 @@
 # to check even number
-
 num = int(input("The number is : "))        # by default input function takes string
 if num % 2 == 0:
     print("The given number is even")
@@ -7,7 +6,6 @@ else:
     print("The given number is not even")
 
 # find the largest number among 3
-
 a = int(input("Tha value a is : "))
 b = int(input("The value of b is : "))
 c = int(input("The value of c is: "))
@@ -17,6 +15,7 @@ elif b > a and b > c:
     print("b is largest number")
 else:
     print("c is largest number")
+
 # if a>b:
 #     if a>c:
 #         print("a is largest ")
@@ -47,14 +46,12 @@ def asc_order(list):
 a = asc_order([4,8, 2, 1, 99, 3])
 print(a)
 
-
 # descending order of list
 for i in range(len_lst):
     for j in range(i + 1, len_lst):
         if lst[i] < lst[j]:
             lst[i], lst[j] = lst[j], lst[i]
 print(lst)
-
 
 # find the list of even numbers and list of odd number from given list
 lst_a = [2, 6, 9, 13, 22, 10, 33, 21, 4, 8]
@@ -68,3 +65,14 @@ for num in lst_a:
 print("even list is {}".format(even_lst))
 print("odd list is {}".format(odd_lst))
 
+def even_odd_list(list):
+    even_lst = []
+    odd_lst = []
+    for i in list:
+        if i % 2 == 0:
+            even_lst.append(i)
+        else:
+            odd_lst.append(i)
+    return even_lst, odd_lst
+ab = even_odd_list([2, 5, 7, 8, 756, 0, 20, 88, 99, 55, 33])
+print(ab)

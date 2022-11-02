@@ -25,7 +25,6 @@ for i in splt_str:
 rev_str = " ".join(rev_lst)
 print("The reversed string is {}".format(rev_str))
 
-
 tpl_a = (1, 4, 9)
 for j in tpl_a:
     print(j)
@@ -38,7 +37,6 @@ for k in set_a:
 print(initial)
 
 # String reversing without using inbuilt function and without using slicing
-
 str_b = "Deekshitha"
 rev_str = ""
 for i in str_b:
@@ -86,6 +84,15 @@ for i in range(len(lst1)):
     sum = lst1[i] + lst2[i]
     sum_lst.append(sum)
 print("The sum of each elements of two list is {}".format(sum_lst))
+
+def sumlist(list, list1):
+    sum_lst = []
+    for i in range(len(list)):
+        sum = list[i] + list1[i]
+        sum_lst.append(sum)
+    return sum_lst
+bc = sumlist([1, 7, 5, 3, 6], [2, 5, 10, 18, 0])
+print(bc)
 
 # try:
 #     sum_lst = []

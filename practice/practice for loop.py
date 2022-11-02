@@ -60,6 +60,15 @@ str1 = "welcome to the world of python"
 for k in range(3, 30, 3):
     print(str1[k])
 
+# def multiple_of_three(str):
+#     str_v = ""
+#     for i in range(3, 30, 3):
+#         str_v = str_v + str[i]
+#     return str_v
+
+# str_ab = multiple_of_three("welcome to home")
+# print("multiples of 3 is {}".format(str_ab))
+
 # Remove duplicates from the list
 lst = [25, 20, 9, 25, 20, 10]
 emp_lst = []
@@ -143,6 +152,18 @@ for i in lst1:
         neg.append(i)
 print(pos)
 print(neg)
+
+def pos_neg_list(list):
+    pos = []
+    neg = []
+    for i in list:
+        if i >= 0 and i not in pos:
+            pos.append(i)
+        if i < 0 and i not in neg:
+            neg.append(i)
+    return pos, neg
+ab = pos_neg_list([1, -4, 67, 87, -3, -8, 456, -9])
+print(ab)
 
 # remove duplicates from string
 str_a = "hgdkogfkkazmv591469sgh123agh"
