@@ -13,11 +13,19 @@ o/p {"a": 1, "b": 2, "c": 7, "e":5, "d":5}
 
 a = "aaabbbccaabb"
 # o/p = '3a3b2c2a2b'
-c = ""
+# c = ""
+# count = 0
+# for i in a:
+#     if i in c:
+#         c = a.count(i) + 1
+#     print(c)
+d = {}
+count = 0
 for i in a:
-    if i in c:
-        c = c + i
-    print(i)
+    count = a.count(i)
+    if i in a:
+        d[i] = count
+print(d)
 
 
 
