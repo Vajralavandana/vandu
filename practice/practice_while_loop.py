@@ -13,13 +13,12 @@ o/p {"a": 1, "b": 2, "c": 7, "e":5, "d":5}
 
 a = "aaabbbccaabb"
 # o/p = '3a3b2c2a2b'
-c = {}
+c = ""
 for i in a:
     if i in c:
-        c[i] = c[i] + 1
-    else:
-        c[i] = 1
-print(c)
+        c = c + i
+    print(i)
+
 
 
 str = "This is India"
