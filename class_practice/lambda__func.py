@@ -43,12 +43,44 @@ num_b = [5, 1, 3, 6]
 research = map(lambda x, y : x + y, num_a, num_b)
 print(list(research))
 
-num = [5, 7, 8, 2, 4, 10, 1, 3, 22, 6]
+num = {5, 7, 8, 2, 4, 10, 1, 3, 22, 6}
 fil_eve = filter(lambda a: a % 2 == 0, num)
 fil_odd = filter(lambda a: a % 2 != 0, num)
-print("filtered even numbers are:{}".format(fil_eve))
-print("filtered odd numbers are:{}".format(fil_odd))
+print("filtered even numbers are:{}".format(list(fil_eve)))
+print("filtered odd numbers are:{}".format(set(fil_odd)))
+
+dict_a = {"a":"1", "b":"2"}
+fil = filter(lambda a : a, dict_a)
+print(list(fil))
 
 z = lambda x: True if x < 10 else False
 print(z(2))
 print(z(11))
+
+
+str = "python"
+rev_str = ""
+count = 0
+len_str = len(str)
+while count<len_str:
+    rev_str =str[count]+rev_str
+    count += 1
+print(rev_str)
+
+# List comprohension
+lst_a = [2, 4, 5, 8]
+lst_b = [4, 6, 9, 10]
+lst = [lst_a[i]+lst_b[i] if len(lst_a)==len(lst_b) else None for i in range(len(lst_b))]
+print(lst)
+
+num = [20, 10, 9,]
+lst_1 = [i if i>10 else i+1 for i in num]
+print(lst_1)
+
+# dictionary comprehension
+dict = {lst_a[i]:lst_b[i] for i in range(len(lst_b)) if len(lst_a)==len(lst_b)}
+print(dict)                 # during if else condition for should be at end and during only if for should be before if coondition
+
+
+#s = "abcabcbb"
+s1 = "pythonnoh"

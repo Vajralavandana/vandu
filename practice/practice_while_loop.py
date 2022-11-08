@@ -6,8 +6,17 @@ write a program to combine two different dictionaries.
 while combining, if you find the same keys, you can add the values of these same keys. output the new dictionary
 o/p {"a": 1, "b": 2, "c": 7, "e":5, "d":5}
 """
-dict = {"a":1, }
-
+dicta = {"a": 1, "b": 2, "c": 3}
+dictb = {"e": 5, "c": 4, "d": 5}
+d = {}
+for k, v in dicta.items():
+    for i, j in dictb.items():
+        if k == i:
+            d[k, i] = v + j
+        else:
+            d[k] = v
+            d[i] = j
+print(d)
 
 
 
