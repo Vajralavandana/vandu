@@ -67,10 +67,10 @@ while count<len_str:
     count += 1
 print(rev_str)
 
-# List comprohension
+# List comprehension
 lst_a = [2, 4, 5, 8]
 lst_b = [4, 6, 9, 10]
-lst = [lst_a[i]+lst_b[i] if len(lst_a)==len(lst_b) else None for i in range(len(lst_b))]
+lst = [lst_a[i]+lst_b[i] if len(lst_a) == len(lst_b) else None for i in range(len(lst_b))]
 print(lst)
 
 num = [20, 10, 9,]
@@ -84,3 +84,12 @@ print(dict)                 # during if else condition for should be at end and 
 
 #s = "abcabcbb"
 s1 = "pythonnoh"
+
+
+lst1 = [2, 9, 1, 3, 9]
+lst = [i*i for i in lst1]
+print(lst)
+
+dict1 = {i: i*i for i in lst1}
+print(dict1)
+

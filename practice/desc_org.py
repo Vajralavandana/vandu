@@ -73,6 +73,9 @@ for key, val in dicta.items():
     val_typ.append(type(val))
 print("The type of values in dictionary is {}".format(val_typ))
 
+lm = [type(j) for i, j in dicta.items()]
+print(lm)
+
 def dicta(dict):
     val_typ = []
     for key, val in dict.items():

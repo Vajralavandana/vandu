@@ -1,6 +1,8 @@
 str_a = "Hello"
 for i in str_a:
     print(i)
+l1 = [i for i in str_a]
+print(l1)
 
 lst_a = [1, 3, 5, 8]
 for i in lst_a:
@@ -25,6 +27,9 @@ for i in splt_str:
 rev_str = " ".join(rev_lst)
 print("The reversed string is {}".format(rev_str))
 
+l2 = [i[::-1] for i in str_b.split(" ")]
+print(" ".join(l2))
+
 tpl_a = (1, 4, 9)
 for j in tpl_a:
     print(j)
@@ -45,6 +50,9 @@ for i in str_b:
     rev_str = i+rev_str
     print("the rev_str value after iteration is {}".format(rev_str))
 print("The value of reversed string is {}".format(rev_str))
+
+l3 = [i+rev_str for i in str_b]
+print(l3)
 
 """
 i/p :  str_b = "Welcome to python"
@@ -78,12 +86,17 @@ lst2 = [5, 6, 7, 8]
 for i in lst1:
     for j in lst2:
         print(i, j)
+l4 = [(i, j) for j in lst2 for i in lst1]
+print(l4)
 
 sum_lst = []
 for i in range(len(lst1)):
     sum = lst1[i] + lst2[i]
     sum_lst.append(sum)
 print("The sum of each elements of two list is {}".format(sum_lst))
+
+l5 = [lst1[i] + lst2[i] for i in range(len(lst2)) if len(lst1) == len(lst2)]
+print(l5)
 
 def sumlist(list, list1):
     sum_lst = []

@@ -1,5 +1,21 @@
 s = "abcabcbb"
 # output = 3
+emp = ""
+for i in s:
+    if i not in emp:
+        emp = emp + i
+len_emp = len(emp)
+print(emp, len_emp)
+
+n = input("the string is: ")
+emp1 = ""
+for i in n:
+    if i not in emp1:
+        emp1 = emp1 + i
+len1 = len(emp1)
+print(emp1, len1)
+
+
 
 """
 write a program to combine two different dictionaries.
@@ -29,18 +45,18 @@ a = "aaabbbccaabb"
 #     if i in c:
 #         c = a.count(i) + 1
 #     print(c)
-d = {}
-count = 0
-for i in a:
-    count = a.count(i)
-    if i in a:
-        d[i] = count
-print(d)
+# d = {}
+# count = 0
+# for i in a:
+#     count = a.count(i)
+#     if i in a:
+#         d[i] = count
+# print(d)
 
 
 
 str = "This is India"
 # o/p = the max length string is India and length is 5
 str_splt = str.split()
-max_len = max(str_splt)
-print("the max length string is {} and length is {}".format(max_len, len(max_len)))
+max_len = min(str_splt)
+print(max_len)

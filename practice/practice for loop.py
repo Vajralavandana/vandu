@@ -34,6 +34,9 @@ for i in splt_str:
 rev_str = " ".join(rev_lst)
 print("The reversed string is {}".format(rev_str))
 
+str_lm = [i[::-1] for i in str_b.split(" ")]
+print(str_lm)
+
 def rev(str):
     splt_str = str.split(" ")
     rev_lst = []
@@ -60,6 +63,9 @@ str1 = "welcome to the world of python"
 for k in range(3, 30, 3):
     print(str1[k])
 
+l6 = [str1[i] for i in range(3, 30, 3)]
+print(l6)
+
 # def multiple_of_three(str):
 #     str_v = ""
 #     for i in range(3, 30, 3):
@@ -76,6 +82,9 @@ for i in lst:
     if i not in emp_lst:
         emp_lst.append(i)
 print("the value of list after removing duplicates is {}".format(emp_lst))
+
+l7 = [i for i in lst if i not in emp_lst]
+print(l7)
 
 def rem_dup(list):
     em_lst = []
@@ -97,6 +106,9 @@ print("the list the elements starting and ending with same letter is {}".format(
 for i in lst2:
     if i[0] == i[-1]:
         print(i)
+
+l8 = [i for i in lst2 if i[0] == i[-1]]
+print(l8)
 
 def start_end(list):
     for i in list:
@@ -132,6 +144,9 @@ for i in list:
         count = count + 1
 print("the count of elements starting and ending with same letter is {}".format(count))
 
+l9 = [count for i in list if i[0] == i[-1]]
+print(l9)
+
 def cont(list):
     count = 0
     for i in list:
@@ -152,6 +167,9 @@ for i in lst1:
         neg.append(i)
 print(pos)
 print(neg)
+
+l10 = [(i, i) for i in lst1 if i >= 0 and i not in pos if i < 0 and i not in neg]
+print(l10)
 
 def pos_neg_list(list):
     pos = []
@@ -180,6 +198,9 @@ for i in str_a:
     if i not in s:
         s = s + i
 print("the string after removing duplicates is {}".format(s))
+
+l11 = [s + i for i in str_a if i not in s]
+print(l11)
 
 def rem_str(str):
     x = ""
@@ -240,6 +261,8 @@ for i in str1:
     str1_dict[i] = cnt
 print(str1_dict)
 
+# l12 = [for i in str1.count(i)]
+# print(l12)
 def str_dictionary(str):
     str12_dict = {}
     for i in str1:
@@ -259,6 +282,9 @@ for i in str12:
 jn = "".join(j)
 print(jn)
 
+l13 = [i for i in str12 if i not in lstx]
+print(" ".join(l13))
+
 def vow_rem(str):
     j = []
     for i in str:
@@ -277,6 +303,8 @@ for i in str12:
     if i in lstx:
         d[i] = count
 print(d)
+# l14 = [d[i] = count for i in str12.count(i) if i in lstx]
+# print(l14)
 
 lt = ["a", "e", "i", "o", "u"]
 def vo_coun(str):
