@@ -83,8 +83,8 @@ for i in lst:
         emp_lst.append(i)
 print("the value of list after removing duplicates is {}".format(emp_lst))
 
-l7 = [i for i in lst if i not in emp_lst]
-print(l7)
+# l7 = [i for i in lst if i not in emp_lst]
+# print(l7)
 
 def rem_dup(list):
     em_lst = []
@@ -156,7 +156,7 @@ def cont(list):
 f = cont(["121", "1234", "abdfa", "rtwdr", "hjkfl"])
 print(f)
 
-lst1 = [4, 25, -2, 0, -9, 10, 3, -2, 4, 1]
+lst1 = [4, 25, -2, 0, -9, 10, 3, 1]
 # print 2 lists of positive list and negative list without duplicates
 pos = []
 neg = []
@@ -168,8 +168,9 @@ for i in lst1:
 print(pos)
 print(neg)
 
-l10 = [(i, i) for i in lst1 if i >= 0 and i not in pos if i < 0 and i not in neg]
-print(l10)
+l10 = [i for i in lst1 if i >= 0]
+l100 = [i for i in lst1 if i < 0]
+print(l10, l100)
 
 def pos_neg_list(list):
     pos = []
@@ -193,13 +194,13 @@ st = "".join(s)
 print(st)
 # another way
 str_a = "hgdkogfkkazmv591469sgh123agh"
-s = ""
-for i in str_a:
-    if i not in s:
-        s = s + i
-print("the string after removing duplicates is {}".format(s))
+s = []
+# for i in str_a:
+#     if i not in s:
+#         s = s + i
+# print("the string after removing duplicates is {}".format(s))
 
-l11 = [s + i for i in str_a if i not in s]
+l11 = [s.append(i) for i in str_a if i not in s]
 print(l11)
 
 def rem_str(str):
@@ -242,6 +243,7 @@ N = int(input("N ="))
 for i in range(N):
     print(lst_b[i])
 
+
 def lar_num(list, N):
     list.sort()
     list.reverse()
@@ -261,8 +263,9 @@ for i in str1:
     str1_dict[i] = cnt
 print(str1_dict)
 
-# l12 = [for i in str1.count(i)]
-# print(l12)
+l12 = {i: str1.count(i) for i in str1}
+print(l12)
+
 def str_dictionary(str):
     str12_dict = {}
     for i in str1:
@@ -303,8 +306,11 @@ for i in str12:
     if i in lstx:
         d[i] = count
 print(d)
-# l14 = [d[i] = count for i in str12.count(i) if i in lstx]
-# print(l14)
+
+# str12 = "hai welcome you all"
+# lstx = ["a", "e", "i", "o", "u"]
+l14 = {i: str12.count(i) for i in str12 if i in lstx}
+print(l14)
 
 lt = ["a", "e", "i", "o", "u"]
 def vo_coun(str):

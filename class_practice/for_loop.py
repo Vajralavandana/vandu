@@ -51,7 +51,9 @@ for i in str_b:
     print("the rev_str value after iteration is {}".format(rev_str))
 print("The value of reversed string is {}".format(rev_str))
 
-l3 = [i+rev_str for i in str_b]
+str_ab = "python programming"
+# rev_ab = ""
+l3 = [i[::-1] for i in str_ab][::-1]
 print(l3)
 
 """

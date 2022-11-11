@@ -65,6 +65,11 @@ for num in lst_a:
 print("even list is {}".format(even_lst))
 print("odd list is {}".format(odd_lst))
 
+lcm1 = [i for i in lst_a if i % 2 == 0]
+lcm2 = [i for i in lst_a if i % 2 == 1]
+print(lcm1, lcm2)
+
+
 def even_odd_list(list):
     even_lst = []
     odd_lst = []

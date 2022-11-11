@@ -6,6 +6,8 @@ sum_a = 0
 for i in a:
     sum_a = i + sum_a
 print(sum_a)
+l1 = [i+i for i in a]
+print(l1)
 
 def lst_a(list):
     sum_a = 0
@@ -24,6 +26,8 @@ cube_c = []
 for i in c:
     cube_c.append(i*i*i)
 print(cube_c)
+lcm1 = [i*i*i for i in c]
+print(lcm1)
 
 def cube(list):
     cube_c = []
@@ -44,6 +48,9 @@ for i in d:
     squ.append(i*i)
 print(squ)
 
+lcm = [i*i for i in d]
+print(lcm)
+
 def squ_d(list):
     squ = []
     for i in list:
@@ -57,13 +64,15 @@ q = squ_d([6, 7, 8, 9, 10])
 print("the square values of list are {}".format(q))
 
 
-lst = [" ABC ", "hcb", "xyz"]
+lst = [" ABC ", " hcb", "xyz", "hkdsgfk", " bn  hehwfg  l "]
 # o/p lst =["ABC","hcb","xyz"]
 for i in range(len(lst)):
     if " " in lst[i]:
         str = lst[i].replace(" ", "")
         lst[i] = str
 print(lst)
+l2 = [lst[i].replace(" ", "") if " " in lst[i] else lst[i] for i in range(len(lst))]
+print(l2)
 
 def rem_spac(list):
     for i in range(len(list)):

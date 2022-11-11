@@ -50,9 +50,12 @@ lst.sort()
 print("List after sorting  {}".format(lst))
 desc_lst = []
 for i in lst:
-    desc_lst.insert(0, i)
-    # desc_lst = [i]+desc_lst
+    # desc_lst.insert(0, i)
+    desc_lst = [i]+desc_lst
 print("descending order of list is {}".format(desc_lst))
+
+# l1 = [[i] lst.sort() for i in lst]
+# print(l1)
 
 def desc_lst(list):
     list.sort()
