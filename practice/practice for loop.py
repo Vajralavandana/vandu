@@ -200,8 +200,7 @@ s = []
 #         s = s + i
 # print("the string after removing duplicates is {}".format(s))
 
-l11 = [s.append(i) for i in str_a if i not in s]
-print(l11)
+
 
 def rem_str(str):
     x = ""
