@@ -54,9 +54,6 @@ for i in lst:
     desc_lst = [i]+desc_lst
 print("descending order of list is {}".format(desc_lst))
 
-# l1 = [[i] lst.sort() for i in lst]
-# print(l1)
-
 def desc_lst(list):
     list.sort()
     desc_list = []

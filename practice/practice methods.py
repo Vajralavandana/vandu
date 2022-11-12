@@ -6,6 +6,7 @@ sum_a = 0
 for i in a:
     sum_a = i + sum_a
 print(sum_a)
+
 l1 = [i+i for i in a]
 print(l1)
 

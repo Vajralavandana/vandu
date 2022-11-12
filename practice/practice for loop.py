@@ -144,8 +144,8 @@ for i in list:
         count = count + 1
 print("the count of elements starting and ending with same letter is {}".format(count))
 
-l9 = [count for i in list if i[0] == i[-1]]
-print(l9)
+l9 = [i for i in list if i[0] == i[-1]]
+print(len(l9))
 
 def cont(list):
     count = 0
