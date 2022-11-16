@@ -327,9 +327,12 @@ print(h)
 
 # print prime numbers
 n = int(input("number is : "))
-for i in range(1, n):
+for i in range(2, n):
     if n % i == 0:
-        print(i)
+        print("not prime")
+        break
+else:
+    print("prime")
 
 
 

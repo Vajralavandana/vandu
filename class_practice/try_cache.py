@@ -39,4 +39,3 @@ except Exception as e:
 finally:
     lst = lst1+lst2
     print(lst)
-    
