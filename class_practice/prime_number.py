@@ -79,6 +79,7 @@ dict_b = {"e": 5, "c": 4, "d": 5}
 for k in dict_b:
     if k in dict_a:
         dict_b[k] = dict_b[k]+dict_a[k]
+print(dict_b)
 res = dict_a | dict_b
 print(res)
 

@@ -241,6 +241,8 @@ print(lst_b)
 N = int(input("N ="))
 for i in range(N):
     print(lst_b[i])
+lar_num_lst = [lst_b[i] for i in range(N)]
+print(lar_num_lst)
 
 
 def lar_num(list, N):
@@ -297,6 +299,12 @@ def vow_rem(str):
 v = vow_rem("welcome to sweet home")
 print(v)
 
+vow = ["a", "e", "i", "o", "u"]
+str_1 = "welcome to sweet home"
+lst_1 = [i for i in str_1 if i not in vow]
+print("".join(lst_1))
+
+
 # vowels count in dict
 d = {}
 count = 0
@@ -334,9 +342,12 @@ for i in range(2, n):
 else:
     print("prime")
 
+b = [{"name": "Tom", "age":  "10"}, {"name": "Mark", "age": "5"},
+     {"name": "Pam", "age":  "7"}, {"name": "Sam", "age": "12"}]
+ # output should be {'Mark': 5, 'Pam': 7, 'Tom': 10, 'Sam': 12}
+ # name with age in ascending order
 
-
-
-
-
-
+for i in b:
+    v1 = i["name"]
+    v2 = i["age"]
+    print(v1, v2)

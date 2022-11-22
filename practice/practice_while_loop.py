@@ -34,13 +34,13 @@ for k, v in dicta.items():
             d[i] = j
 print(d)
 
-dict_a = {"a":1, "b":2, "c":3}
-dict_b = {"e":5, "c":4, "d":5}
+dict_a = {"a": 1, "b": 2, "c": 3}
+dict_b = {"e": 5, "c": 4, "d": 5}
 for k in dict_b:
     if k in dict_a:
         dict_b[k] = dict_b[k]+dict_a[k]
 res = dict_a | dict_b
-print(res)
+print(dict_b)
 
 
 a = "aaabbbccaabb"

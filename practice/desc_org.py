@@ -61,6 +61,11 @@ def desc_lst(list):
         desc_list = [i] + desc_list
     return desc_list
 
+# lst_1 = [5, 3, 7, 6, 90]
+# lst_1.sort()
+# desc_lst1 = [for i in range(len(lst_1))]
+
+
 q = desc_lst([5, 3, 7, 6, 90])
 print("the value of descending list is {}".format(q))
 a= desc_lst([1, 8, 3, 99, 78, 100, 200, 600, 250])
