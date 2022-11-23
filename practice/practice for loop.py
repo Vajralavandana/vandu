@@ -332,6 +332,8 @@ g = vo_coun("welcome to python programming and world")
 print(g)
 h = vo_coun("hello world")
 print(h)
+j = vo_coun("welcome to python")
+print(j)
 
 # print prime numbers
 n = int(input("number is : "))
@@ -346,8 +348,23 @@ b = [{"name": "Tom", "age":  "10"}, {"name": "Mark", "age": "5"},
      {"name": "Pam", "age":  "7"}, {"name": "Sam", "age": "12"}]
  # output should be {'Mark': 5, 'Pam': 7, 'Tom': 10, 'Sam': 12}
  # name with age in ascending order
-
+dict_b = {}
 for i in b:
     v1 = i["name"]
-    v2 = i["age"]
-    print(v1, v2)
+    dict_b[v1] = int(i["age"])
+print(dict_b)
+v2 = list(dict_b.items())
+v2.sort()
+dit_b = dict(v2)
+print(dit_b)
+
+# count vowels and form dict
+str_12 = "welcome to python"
+lstx = ["a", "e", "i", "o", "u"]
+d = {}
+count = 0
+for i in str_12:
+    count = str_12.count(i)
+    if i in lstx:
+        d[i] = count
+print(d)

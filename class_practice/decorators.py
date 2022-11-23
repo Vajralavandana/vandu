@@ -27,7 +27,7 @@ def summ(func):
 
 @summ
 def sm():
-    return 3, 2
+    return 3, 5
 print(sm())
 
 
