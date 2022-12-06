@@ -368,3 +368,16 @@ for i in str_12:
     if i in lstx:
         d[i] = count
 print(d)
+
+pq = "I Sabyasachi, Techno Exponent, Sabyasachi Exponent"
+# o/p = {"I" : 1, "Sabyasachi" : 2, "Techno": 1, "Exponent": 2}
+p = {}
+count = 0
+rep_pq = pq.replace(",", "")
+print(rep_pq)
+splt_pq = rep_pq.split()
+print(splt_pq)
+for i in splt_pq:
+    count = splt_pq.count(i)
+    p[i] = count
+print(p)
