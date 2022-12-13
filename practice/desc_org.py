@@ -86,7 +86,7 @@ def dicta(dict):
     for key, val in dict.items():
         val_typ.append(type(val))
     return val_typ
-x = dicta({"p": 1, "q":"5"})
+x = dicta({"p": 1, "q": "5"})
 print(x)
-y = dicta({"d":6, "e":5})
+y = dicta({"d": 6, "e": 5})
 print(y)

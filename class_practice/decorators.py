@@ -15,6 +15,9 @@ def num():
 print(num())
 
 
+
+
+
 def sum(a, b):
     return a+b
 
@@ -29,4 +32,3 @@ def summ(func):
 def sm():
     return 1, 2
 print(sm())
-

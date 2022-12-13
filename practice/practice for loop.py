@@ -381,3 +381,15 @@ for i in splt_pq:
     count = splt_pq.count(i)
     p[i] = count
 print(p)
+
+s = "I Sabyasachi, Techno Exponent, sabyasachi Exponent"
+dic = {}
+step = s.replace(",", "")
+s1 = step.lower()
+lst = s1.split(" ")
+
+for i in lst:
+    sent = lst.count(i)
+    if i not in dic.keys():
+        dic[i] = sent
+print(dic)
