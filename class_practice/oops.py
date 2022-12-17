@@ -67,7 +67,7 @@ obj_child = EmployeeOfficialDetails(10000, 23, "Deekshitha", "Manjunath")
 det_emp = obj_child.employee_details()
 
 
-
+# multiple inheritence
 class Vehicle():
     def __init__(self, colour, fuel_type):
         self.colour = colour
@@ -96,3 +96,108 @@ class VehicleDetails(Vehicle, CarDetails):
 
 obj_veh = VehicleDetails("Red", "Petrol", 20 , "ABC")
 det_car = obj_veh.details()
+
+
+# polymorphism
+
+class Cat:
+    def __init__(self, name, age):
+        self.name = name
+        self. age = age
+
+    def food(self):
+        print("Cat eats Whiskes")
+
+    def sound(self):
+        print("meow")
+
+class Dog:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def food(self):
+        print("Dog eats drools")
+
+    def sound(self):
+        print("bark")
+
+obj_cat = Cat("Teddu", 1)
+obj_cat.food()
+obj_cat.sound()
+obj_dog = Dog("Dheera", 1)
+obj_dog.food()
+obj_dog.sound()
+
+class SumOperation():
+    # def __init__(self, a, b, c):
+    #     self.a = a
+    #     self.b = b
+    #     self.c = c
+    #method over loading
+    def test(self, a=None, b=None):
+        print(a)
+        print(b)
+
+
+
+sum_obj = SumOperation()
+sum_obj.test(3,4)
+sum_obj.test(5)
+
+#method over riding
+
+class Car:
+    def __init__(self):
+        self.model_name = "XUV_500"
+        self.model_year = 2010
+
+    def details(self):
+        print("Car model name is {} and year of model is {}".format(self.model_name, self.model_year))
+
+class CarTwo(Car):
+    def __init__(self):
+        self.model_year = 2010
+        self.model_name = "Xuv-300"
+
+    def details(self):
+        print("Car model name is {} and year of model is {}".format(self.model_name, self.model_year))
+
+
+obj_car = Car()
+obj_car.details()
+obj_car_two = CarTwo()
+obj_car_two.details()
+
+# Data Encapsulation
+class Parent:
+    def __init__(self):
+        self.a = "without encapsulation"
+        self.__b = "with encapsulation"   # private member of own class
+
+    def encap(self):
+        print(self.__b)
+
+    def __get_details(self):
+        concat = self.__b+self.a
+        return concat
+
+    def encap_details(self):
+        print(self.__get_details())
+
+class Child(Parent):
+    def __init__(self):
+        Parent.__init__(self)
+        print("Calling non-encapsulate variable is {}".format(self.a))
+        # print("Calling encapsulated variable is {}".format(self.__b))
+        # self.c = self.__b
+        # print("C reading encapsulated data is {}".format(self.c))
+
+
+
+obj_parent = Parent()
+print(obj_parent.a)
+obj_parent.encap()
+obj_child = Child()
+# print(obj_child.encap())
+obj_parent.encap_details()
