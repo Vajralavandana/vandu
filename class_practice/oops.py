@@ -66,3 +66,33 @@ class EmployeeOfficialDetails(EmployeeDetails):
 obj_child = EmployeeOfficialDetails(10000, 23, "Deekshitha", "Manjunath")
 det_emp = obj_child.employee_details()
 
+
+
+class Vehicle():
+    def __init__(self, colour, fuel_type):
+        self.colour = colour
+        self.fuel_type = fuel_type
+
+    def type_vehicle(self):
+        print("the colour of the vehicle is {} and the fuel type of vehicle is {}".format(self.colour, self.fuel_type))
+
+class CarDetails():
+    def __init__(self, veh_num, own_name):
+        self.veh_num = veh_num
+        self.own_name = own_name
+
+    def car_details(self):
+        print("the vehicle no of car is {} and owner name of car is {}".format(self.veh_num, self.own_name))
+
+class VehicleDetails(Vehicle, CarDetails):
+    def __init__(self, colour, fuel_type, veh_num, own_name):
+        self.colour = colour
+        self.fuel_type = fuel_type
+        self.veh_num = veh_num
+        self.own_name = own_name
+
+    def details(self):
+        print("the vehicle no of car is {} and owner name of car is {} and the colour of the vehicle is {} and the fuel type of vehicle is {}".format(self.veh_num, self.own_name, self.colour, self.own_name))
+
+obj_veh = VehicleDetails("Red", "Petrol", 20 , "ABC")
+det_car = obj_veh.details()
