@@ -48,7 +48,6 @@ a = rev("hello welcome to world")
 print(a)
 
 # print(" the value of string is{}".format(splt))
-#
 # len_splt = len(splt)
 # print(" the length of split string is {}".format(len_splt))
 # rev = splt[0][::-1] + " " + splt[1][::-1] + " " + splt[2][::-1]

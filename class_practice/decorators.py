@@ -14,6 +14,12 @@ def num():
     return 10
 print(num())
 
+"""
+Monkey patching refers to matching or updating piece of code or any module 
+
+*args = args is used to pass the variable number of argument to a function
+**kwargs = kwargs is used to pass a variable length argument
+"""
 
 
 
@@ -32,3 +38,17 @@ def summ(func):
 def sm():
     return 1, 2
 print(sm())
+
+
+
+
+
+def arg_func(*args):
+    for i in args:
+        print(i)
+arg_func("vandana","gajendra","prathibha")
+
+
+def kwargs_func(**kwargs):
+    print(kwargs)
+kwargs_func(first = 6, second =5)
