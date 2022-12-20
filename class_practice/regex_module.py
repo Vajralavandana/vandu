@@ -18,7 +18,7 @@ x = re.findall("al", txt1)
 print(x)
 
 # sub
-y = re.sub(" ",",",txt)
+y = re.sub(" ", ",", txt)
 print(y)
 
 
