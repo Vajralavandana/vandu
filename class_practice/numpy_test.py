@@ -21,3 +21,19 @@ print(arr[0:2])
 
 print(arr_mult_dim[1, -2])
 print(arr_mult_dim[0, 1:2])
+
+import numpy as nm
+ar = nm.array([8, 5, 9, 7])
+print(ar)
+mul_di = nm.array([[2, 4, 6, 7], [8, 3, 5, 9]])
+print(mul_di)
+
+a_m_d = nm.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [0, 1, 5]]])
+print(a_m_d)
+print(ar[1] + ar[2])
+print(a_m_d[0, 1])
+print(a_m_d[1, 0])
+print(a_m_d[1, -1])
+print(a_m_d[0, 0:1])
+print(a_m_d[0, -1])
+

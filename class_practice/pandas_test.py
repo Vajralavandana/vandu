@@ -16,6 +16,23 @@ print(data_frame.loc[[0, 1]])
 print(data_frame.loc[[]])
 
 
+import pandas as pp
+pa = pp.read_csv("C://Users//Vandana//Downloads//test_csv1.csv")
+print(pa)
+ds = {"name": ["smith", "mary"], "age": ["20", "22"]}
+d_s = pp.DataFrame(ds)
+print(d_s)
+
+f_id = pp.DataFrame(ds, index=["i", "ii"])
+print(f_id)
+
+print(d_s.loc[0])
+print(d_s.loc[[1], ["name"]])
+print(d_s.loc[[0, 1], ["name"]])
+print(d_s.loc[:, ["age"]])
+print(d_s.loc[[0, 1]])
+print(d_s.loc[[]])
+
 # lst = [1, 4, 7]
 # ser = pd.Series(lst)
 # print(ser)
